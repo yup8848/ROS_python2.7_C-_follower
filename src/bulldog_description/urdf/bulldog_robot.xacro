@@ -1,0 +1,19 @@
+<?xml version="1.0"?>
+<robot name="bulldog_robot" xmlns:xacro="http://ros.org/wiki/xacro">
+
+  <xacro:arg name="laser_enabled" default="false" />
+  <xacro:arg name="ur5_enabled" default="false" />
+
+  <xacro:include filename="$(find bulldog_description)/urdf/bulldog/bulldog.urdf.xacro" />
+  <xacro:include filename="$(find bulldog_description)/urdf/accessories/plates.urdf.xacro" />
+
+  <xacro:bulldog_robot />
+
+  <xacro:arg name="use_nominal_extrinsics" default="false"/>
+  <xacro:include filename="$(find realsense2_description)/urdf/_d435.urdf.xacro" />
+
+  <xacro:sensor_d435 parent="jc_link" name="camera" use_nominal_extrinsics="$(arg use_nominal_extrinsics)">
+    <origin xyz="-0.277 0.324 0" rpy="1.5708 0 3.1416" />
+  </xacro:sensor_d435>
+
+</robot>

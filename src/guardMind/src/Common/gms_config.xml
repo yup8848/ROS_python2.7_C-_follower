@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!---------------------------------日志相关配置项----------------------------------->
+<!--0关闭写日志文件，其他打开写日志文件-->
+<gms_log_file_switch>1</gms_log_file_switch>
+<!--0关闭日志输出到控制台，其他打开日志输出到控制台-->
+<!--控制台输出日志，可能会导致程序性能下降，响应时间变长，建议关闭，不影响日志文件记录-->
+<gms_log_std_switch>1</gms_log_std_switch>
+<!--LL_TRACE = 1,LL_DEBUG = 2,LL_WARNING = 3, LL_ERROR = 4,其他值，默认使用LL_DEBUG = 2,-->
+<gms_log_output_level>1</gms_log_output_level>
+<!--日志文件数量，Min=1,max=500-->
+<gms_log_file_count>100</gms_log_file_count>
+
+

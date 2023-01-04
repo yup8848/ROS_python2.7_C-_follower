@@ -1,0 +1,2 @@
+beginner_tutorials:bulldog_description:guardMind
+-DCATKIN_DEVEL_PREFIX=/home/phdruan/catkin_ws/devel -DCMAKE_INSTALL_PREFIX=/home/phdruan/catkin_ws/install -G Unix Makefiles
